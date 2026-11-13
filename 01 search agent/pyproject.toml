@@ -1,0 +1,25 @@
+[project]
+name = "01-search-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "black>=26.10.1",
+    "isort>=9.0.2",
+    "langchain>=1.5.0",
+    "langchain-openai>=1.8.0",
+    "langchain-tavily>=0.2.18",
+    "python-dotenv>=1.2.4",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+01-search-agent = "_01_search_agent:main"
+
+[tool.uv.build-backend]
+module-name = "_01_search_agent"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
