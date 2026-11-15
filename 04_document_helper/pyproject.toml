@@ -1,0 +1,35 @@
+[project]
+name = "04-document-helper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "black>=26.10.1",
+    "fastapi>=0.163.1",
+    "jinja2>=3.1.6",
+    "langchain>=1.5.0",
+    "langchain-openai>=1.8.0",
+    "langchain-pinecone>=0.2.13",
+    "nltk>=3.10.4",
+    "openai>=3.51.0",
+    "pinecone-client>=6.0.0",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.67.0",
+    "streamlit-chat>=0.1.1",
+    "tiktoken>=0.14.0",
+    "tqdm>=4.70.1",
+    "unstructured>=0.27.37",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+04-document-helper = "_04_document_helper:main"
+
+[tool.uv.build-backend]
+module-name = "_04_document_helper"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
