@@ -1,0 +1,28 @@
+[project]
+name = "03-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "black>=26.10.1",
+    "isort>=9.0.2",
+    "langchain>=1.5.0",
+    "langchain-community>=0.4.2",
+    "langchain-openai>=1.8.0",
+    "langchain-pinecone>=0.2.13",
+    "langchain-unstructured>=1.0.1",
+    "langchainhub>=0.1.21",
+    "python-dotenv>=1.2.4",
+    "unstructured>=0.27.37",
+]
+
+[project.scripts]
+03-rag = "_03_rag:main"
+
+[tool.uv.build-backend]
+module-name = "_03_rag"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
